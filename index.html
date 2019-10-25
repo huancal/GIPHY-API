@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>GIPHY API</title>
 </head>
 
 <body>
 
-    <button data-search="puppy">puppies</button>
-    <button data-search="kittens">kittens</button>
-    <button data-search="babies">babies</button>
+    <div id="button-area">
+    </div>
+
+
+    <form id="topic-id" class="card-body">
+        <label form="topic-input">Add a pixar movie</label>
+        <input type="text" id="topic-input"><br />
+        <button id="add-gifs" class="btn-success m-2" value="Submit">Submit</button>
+    </form>
 
 
     <div class="container">
@@ -22,12 +32,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
     <!-- jquery  -->
 
