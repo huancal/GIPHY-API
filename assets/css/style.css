@@ -1,0 +1,26 @@
+.display-4,
+.lead {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-control {
+    width: 100vh;
+}
+
+* {
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background-color: #54a0ff;
+}
+
+button {
+    background-color: #f6b93b;
+}
+
+.btn-primary {
+    background-color: #10ac84;
+}

@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-    var buttonList = ['puppies', 'kittens', 'babies'];
+    var buttonList = ['NBA Fails', 'The Office', 'Crying Jordan'];
 
     function renderButtons() {
         $('#button-area').empty();
         for (var i = 0; i < buttonList.length; i++) {
-            var giphybtn = $("<button class='btn-outline-success m-3'>");
+            var giphybtn = $("<button class='btn-outline-secondary btn-lg m-4'>");
             giphybtn.attr('data-search', buttonList[i]);
             giphybtn.addClass('animalbtn');
             giphybtn.text(buttonList[i]);
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     renderButtons();
 
-    // Adding click event listeners to all elements with a class of "gifTastic"
+
     $(document).on("click", ".animalbtn", displayGifs);
 
     function displayGifs() {
@@ -56,12 +56,12 @@ $(document).ready(function () {
                     console.log(response.data[i]);
                     var animated = response.data[i].images.fixed_height.url;
                     var still = response.data[i].images.fixed_height_still.url;
-                    $('#gifs-here').append("<p>Rating: " + response.data[i].rating + "</p>")
-                    // $('#gifs-here').append("<img src ='" + response.data[i].images.downsized.url + "'>");
+                    $('#gifs-here').append("<p>RATING: " + response.data[i].rating + "</p>")
+
 
                     var gifImage = $("<img>");
 
-                    gifImage.attr("src", still);
+                    gifImage.attr("src", animated);
                     gifImage.addClass('animateImg');
                     gifImage.attr("data-still", still);
                     gifImage.attr("data-animate", animated);

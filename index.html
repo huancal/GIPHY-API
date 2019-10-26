@@ -9,19 +9,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Righteous&display=swap" rel="stylesheet">
     <title>GIPHY API</title>
 </head>
 
 <body>
 
-    <div id="button-area">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">GIPHY Lookups</h1>
+            <p class="lead">Looking for a GIF? Use the submit button to add and browse through your favorite GIFs</p>
+        </div>
     </div>
+
+    <div id="button-area"></div>
 
 
     <form id="topic-id" class="card-body">
-        <label form="topic-input">Add a pixar movie</label>
-        <input type="text" id="topic-input"><br />
-        <button id="add-gifs" class="btn-success m-2" value="Submit">Submit</button>
+        <label form="topic-input">Add a category of your favorite GIFs (Top 10 GIFs will display)</label>
+        <input type="text" class='form-control' id="topic-input" width=300px><br />
+        <button id="add-gifs" class="btn-success btn-lg m-2" value="Submit">Submit</button>
     </form>
 
 
